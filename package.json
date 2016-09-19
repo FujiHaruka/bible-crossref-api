@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bible cross refference API",
   "scripts": {
-    "start": "node app/app.js",
+    "start": "node app/bible-crossref-api.js",
     "test": "mocha"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/fujiharuka/bible-crossref-api#readme",
   "dependencies": {
     "koa": "^1.2.1",
+    "koa-cors": "0.0.16",
     "koa-logger": "^1.3.0",
     "koa-route": "^2.4.2",
     "mysql": "^2.11.1",

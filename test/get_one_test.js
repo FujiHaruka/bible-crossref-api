@@ -1,4 +1,4 @@
-const app = require('../app/app')
+const app = require('../app/bible-crossref-api')
 const request = require('supertest')
 const assert = require('assert')
 const { URL_PREFIX } = require('../env')
