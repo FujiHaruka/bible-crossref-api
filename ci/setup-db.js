@@ -1,13 +1,15 @@
 const co = require('co')
 const Sequelize = require('sequelize')
-const importData = require('./data.json')
+const importData = require('./db/data.json')
 const {
+  DB_PORT,
   MYSQL_DATABASE,
   MYSQL_ROOT_PASSWORD
-} = require('../../env')
+} = require('../env')
 
 let sequelize = new Sequelize(MYSQL_DATABASE, 'root', MYSQL_ROOT_PASSWORD, {
   host: 'localhost',
+  port: DB_PORT,
   dialect: 'mysql',
   pool: {
     max: 5,
