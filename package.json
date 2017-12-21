@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bible cross refference API",
   "scripts": {
-    "pm2": "pm2 app/bible-crossref-api.js --name bible-crossref-api",
+    "pm2": "pm2 start app/bible-crossref-api.js --name bible-crossref-api",
     "start": "node app/bible-crossref-api.js",
     "test": "mocha"
   },
